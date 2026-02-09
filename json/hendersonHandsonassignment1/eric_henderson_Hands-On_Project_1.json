@@ -1,0 +1,80 @@
+{
+    "ericsWakeUpPlaylist": [
+        {
+            "songTitle": "Chop Suey!",
+            "artistName": "System Of A Down",
+            "albumName": "Toxicity",
+            "releaseDate": "2001-09-04T00:00:00",
+            "genre": "Nu Metal",
+            "performers": {
+                "vocals": {
+                    "leadVocalist": "Serj Tankian",
+                    "backupVocalist": "Daron Malakian" 
+                },
+                "guitar": {
+                    "leadGuitarist": "Daron Malakian"
+                },
+                "drums": {
+                    "drummer": "John Dolmayan"
+                },
+                "bass": {
+                    "bassGuitarist": "Shavo Odadjian"
+                },
+                "keyboards": {
+                    "keyboardist": "Serj Tankian"
+                }
+            },
+            "recordLabel": "American/Columbia Records",
+            "durationSeconds": 210 
+        },
+        {
+            "songTitle": "Break Stuff",
+            "artistName": "Limp Bizkit",
+            "albumName": "Significant Other",
+            "releaseDate": "1999-01-01T00:00:00",
+            "genre": "Nu Metal",
+            "performers": {
+                "vocals": {
+                    "leadVocalist": "Fred Durst"
+                },
+                "guitar": {
+                    "leadGuitarist": "Wes Borland"
+                },
+                "drums": {
+                    "drummer": "John Otto"
+                },
+                "bass": {
+                    "bassGuitarist": "Sam Rivers"
+                },
+                "turntables": {
+                    "dj": "Leor Dimant"
+                }
+            },
+            "recordLabel": "Interscope",
+            "durationSeconds": 166
+        },
+        {
+            "songTitle": "Lateralus",
+            "artistName": "TOOL",
+            "albumName": "Lateralus",
+            "releaseDate": "2001-05-15T00:00:00",
+            "genre": "Progressive Metal",
+            "performers": {
+                "vocals": {
+                    "leadVocalist": "Maynard James Keenan"
+                },
+                "guitar": {
+                    "leadGuitarist": "Adam Jones"
+                },
+                "drums": {
+                    "drummer": "Danny Carey"
+                },
+                "bass": {
+                    "bassGuitarist": "Justin Chancellor"
+                }
+            },
+            "recordLabel": "RCA Records",
+            "durationSeconds": 564
+        }
+    ]
+}
