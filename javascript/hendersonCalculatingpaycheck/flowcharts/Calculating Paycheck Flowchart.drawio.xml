@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.3.8" pages="2">
+  <diagram name="Calculations" id="cOceuXNYxTrI_8YudyW7">
+    <mxGraphModel dx="1042" dy="579" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zt_I1GhVLkyVkYud-rSq-1" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;text-align: center; margin-top: 0px;&quot;&gt;Calculating Pay Flow Chart&lt;/h1&gt;" vertex="1">
+          <mxGeometry height="40" width="320" x="240" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="zt_I1GhVLkyVkYud-rSq-8" edge="1" parent="1" source="zt_I1GhVLkyVkYud-rSq-2" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="zt_I1GhVLkyVkYud-rSq-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zt_I1GhVLkyVkYud-rSq-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" value="&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Gross regular time earned:&lt;/font&gt;&lt;/b&gt;&lt;div&gt;40 hours * $20.00/hr = &lt;b&gt;$800.00&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="200" x="40" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zt_I1GhVLkyVkYud-rSq-6" edge="1" parent="1" source="zt_I1GhVLkyVkYud-rSq-3" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;entryX=0;entryY=0.598;entryDx=0;entryDy=0;entryPerimeter=0;" target="zt_I1GhVLkyVkYud-rSq-5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zt_I1GhVLkyVkYud-rSq-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Gross overtime earned on Saturday:&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;8 hours * 1.5($20.00/hr) = &lt;b&gt;$240.00&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="200" x="40" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="zt_I1GhVLkyVkYud-rSq-9" edge="1" parent="1" source="zt_I1GhVLkyVkYud-rSq-4" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;fontSize=12;startSize=8;endSize=8;entryX=0;entryY=1;entryDx=0;entryDy=0;" target="zt_I1GhVLkyVkYud-rSq-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zt_I1GhVLkyVkYud-rSq-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Gross overtime earned on Sunday:&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;4 hours * 1.5($20.00/hr) = &lt;b&gt;$120.00&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="200" x="40" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="zt_I1GhVLkyVkYud-rSq-13" edge="1" parent="1" source="zt_I1GhVLkyVkYud-rSq-5" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" target="zt_I1GhVLkyVkYud-rSq-12" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zt_I1GhVLkyVkYud-rSq-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;rounded=0;" value="&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Gross regular pay summed:&lt;/font&gt;&lt;/b&gt;&lt;div&gt;$800.00 + $240.00 + $120.00 = &lt;b&gt;&lt;font style=&quot;font-size: 27px;&quot;&gt;$1,160.00&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Total hours worked: &lt;b&gt;52&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="200" width="200" x="350" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="zt_I1GhVLkyVkYud-rSq-11" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#008a00;strokeColor=#005700;fontColor=#ffffff;" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Deductions:&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;ol&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Insurance: 10% of gross&lt;/li&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));&quot;&gt;&lt;b&gt;Formula:&lt;/b&gt; Gross * 0.1&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Tax: 12.5% of gross&lt;/li&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;&lt;b&gt;Formula:&lt;/b&gt; Gross * 0.125&lt;/li&gt;&lt;/ul&gt;&lt;/ol&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="240" x="590" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="zt_I1GhVLkyVkYud-rSq-15" edge="1" parent="1" source="zt_I1GhVLkyVkYud-rSq-12" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" target="zt_I1GhVLkyVkYud-rSq-14" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zt_I1GhVLkyVkYud-rSq-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" value="&lt;b&gt;Insurance deduction calculation:&lt;/b&gt;&lt;div&gt;$1.160.00 * 0.1 = $116.00&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Tax Deduction Calculation:&lt;/b&gt;&lt;/div&gt;&lt;div&gt;$1,160.00 * 0.125 = $145.00&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="160" x="630" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="zt_I1GhVLkyVkYud-rSq-14" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Final Net Pay Calculation&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;b&gt;Formula:&lt;/b&gt; Gross Pay - Calculated Deductions = &lt;b&gt;net pay&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;$1,160.00 - ($116.00 + $145.00) = $899.00&lt;/div&gt;" vertex="1">
+          <mxGeometry height="270" width="270" x="574" y="400" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="dNhT2NV_wJqA6pEIUDVk" name="UI Design">
+    <mxGraphModel dx="1669" dy="1379" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="NxMSgL-wt0W3NR0XS6u9-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="580" width="1000" x="-280" y="-560" as="geometry" />
+        </mxCell>
+        <mxCell id="NxMSgL-wt0W3NR0XS6u9-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;h1&gt;Header&lt;/h1&gt;" vertex="1">
+          <mxGeometry height="60" width="1000" x="-280" y="-560" as="geometry" />
+        </mxCell>
+        <mxCell id="NxMSgL-wt0W3NR0XS6u9-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;h1&gt;Footer&lt;/h1&gt;" vertex="1">
+          <mxGeometry height="60" width="1000" x="-280" y="-40" as="geometry" />
+        </mxCell>
+        <mxCell id="NxMSgL-wt0W3NR0XS6u9-14" edge="1" parent="1" source="NxMSgL-wt0W3NR0XS6u9-4" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=12;startSize=8;endSize=8;" target="NxMSgL-wt0W3NR0XS6u9-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NxMSgL-wt0W3NR0XS6u9-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Button will render on load -&amp;gt; onClick() will fade out buttion, and replace with paycheck&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="190" x="-250" y="-335" as="geometry" />
+        </mxCell>
+        <mxCell id="NxMSgL-wt0W3NR0XS6u9-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="400" width="570" x="110" y="-468" as="geometry" />
+        </mxCell>
+        <mxCell id="NxMSgL-wt0W3NR0XS6u9-15" edge="1" parent="1" source="NxMSgL-wt0W3NR0XS6u9-7" style="endArrow=none;dashed=1;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="NxMSgL-wt0W3NR0XS6u9-7" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="200" y="-240" as="sourcePoint" />
+            <mxPoint x="250" y="-290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NxMSgL-wt0W3NR0XS6u9-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Pay Check" vertex="1">
+          <mxGeometry height="180" width="550" x="120" y="-260" as="geometry" />
+        </mxCell>
+        <mxCell id="NxMSgL-wt0W3NR0XS6u9-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="188" width="380" x="110" y="-468" as="geometry" />
+        </mxCell>
+        <mxCell id="NxMSgL-wt0W3NR0XS6u9-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="188" width="190" x="490" y="-468" as="geometry" />
+        </mxCell>
+        <mxCell id="NxMSgL-wt0W3NR0XS6u9-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Pay period: 1/4/26 - 1/10/26" vertex="1">
+          <mxGeometry height="28" width="380" x="110" y="-468" as="geometry" />
+        </mxCell>
+        <mxCell id="NxMSgL-wt0W3NR0XS6u9-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;b&gt;Earnings&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="380" x="110" y="-440" as="geometry" />
+        </mxCell>
+        <mxCell id="NxMSgL-wt0W3NR0XS6u9-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="Required Deductions" vertex="1">
+          <mxGeometry height="28" width="190" x="490" y="-468" as="geometry" />
+        </mxCell>
+        <mxCell id="NxMSgL-wt0W3NR0XS6u9-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="Federal Income tax" vertex="1">
+          <mxGeometry height="40" width="90" x="490" y="-440" as="geometry" />
+        </mxCell>
+        <mxCell id="NxMSgL-wt0W3NR0XS6u9-23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="40" width="50" x="630" y="-440" as="geometry" />
+        </mxCell>
+        <mxCell id="NxMSgL-wt0W3NR0XS6u9-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="12.50" vertex="1">
+          <mxGeometry height="40" width="50" x="580" y="-440" as="geometry" />
+        </mxCell>
+        <mxCell id="RdrKg0mqTxAh-uw94-56-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="Other Deductions" vertex="1">
+          <mxGeometry height="28" width="190" x="490" y="-400" as="geometry" />
+        </mxCell>
+        <mxCell id="RdrKg0mqTxAh-uw94-56-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="Insurance" vertex="1">
+          <mxGeometry height="32" width="90" x="490" y="-372" as="geometry" />
+        </mxCell>
+        <mxCell id="RdrKg0mqTxAh-uw94-56-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="10.00" vertex="1">
+          <mxGeometry height="32" width="50" x="580" y="-372" as="geometry" />
+        </mxCell>
+        <mxCell id="RdrKg0mqTxAh-uw94-56-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="32" width="50" x="630" y="-372" as="geometry" />
+        </mxCell>
+        <mxCell id="RdrKg0mqTxAh-uw94-56-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;b&gt;Net Pay&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="90" x="490" y="-340" as="geometry" />
+        </mxCell>
+        <mxCell id="RdrKg0mqTxAh-uw94-56-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="899.00" vertex="1">
+          <mxGeometry height="60" width="50" x="580" y="-340" as="geometry" />
+        </mxCell>
+        <mxCell id="RdrKg0mqTxAh-uw94-56-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="50" x="630" y="-340" as="geometry" />
+        </mxCell>
+        <mxCell id="RdrKg0mqTxAh-uw94-56-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;" value="&lt;b&gt;Regular Hours&lt;/b&gt;&lt;div&gt;40&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="100" x="110" y="-410" as="geometry" />
+        </mxCell>
+        <mxCell id="RdrKg0mqTxAh-uw94-56-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;" value="&lt;div&gt;&lt;b&gt;Rate&lt;/b&gt;&lt;/div&gt;&lt;div&gt;20&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="100" x="210" y="-410" as="geometry" />
+        </mxCell>
+        <mxCell id="RdrKg0mqTxAh-uw94-56-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;" value="&lt;b&gt;This Period&lt;/b&gt;&lt;div&gt;800.00&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="180" x="310" y="-410" as="geometry" />
+        </mxCell>
+        <mxCell id="rHLWekWeiwMI5E3D8mjy-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;" value="&lt;b&gt;Overtime Hours&lt;/b&gt;&lt;div&gt;12&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="100" x="110" y="-370" as="geometry" />
+        </mxCell>
+        <mxCell id="rHLWekWeiwMI5E3D8mjy-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;" value="&lt;div&gt;&lt;b&gt;Rate&lt;/b&gt;&lt;/div&gt;&lt;div&gt;30&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="100" x="210" y="-370" as="geometry" />
+        </mxCell>
+        <mxCell id="rHLWekWeiwMI5E3D8mjy-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;" value="&lt;div&gt;360.00&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="180" x="310" y="-370" as="geometry" />
+        </mxCell>
+        <mxCell id="jQo_WxosE9286ScE8teg-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;" value="&lt;div&gt;&lt;b&gt;Gross Pay&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="100" x="110" y="-320" as="geometry" />
+        </mxCell>
+        <mxCell id="jQo_WxosE9286ScE8teg-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;" value="" vertex="1">
+          <mxGeometry height="40" width="100" x="210" y="-320" as="geometry" />
+        </mxCell>
+        <mxCell id="jQo_WxosE9286ScE8teg-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;" value="1160.00" vertex="1">
+          <mxGeometry height="40" width="180" x="310" y="-320" as="geometry" />
+        </mxCell>
+        <mxCell id="pE2BosuTXa51qzVl9wyS-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Possible container above button setting us up: Eric has 40 hours of regular pay..." vertex="1">
+          <mxGeometry height="90" width="205" x="-257.5" y="-180" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

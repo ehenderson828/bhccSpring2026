@@ -1,0 +1,400 @@
+/* Style reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-primary: #0a0a0a;
+    --bg-secondary: #141414;
+    --bg-card: #1a1a1a;
+    --border-subtle: #2a2a2a;
+    --text-primary: #f0f0f0;
+    --text-secondary: #a0a0a0;
+    --accent: #d4a017;
+    --accent-hover: #e6b422;
+    --font-heading: 'Segoe UI', system-ui, sans-serif;
+    --font-body: 'Segoe UI', system-ui, sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-out {
+    animation: fadeOut 0.4s ease forwards;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+.header {
+    background-color: var(--bg-secondary);
+    border-bottom: 3px solid var(--accent);
+    padding: 2rem 1.5rem;
+    text-align: center;
+}
+
+.header-text {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-primary);
+}
+
+.main-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem 1.5rem;
+}
+
+.container-onload {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 4px;
+    padding: 2.5rem 3rem;
+    max-width: 520px;
+    width: 100%;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+    align-self: center;
+}
+
+.container-postclick {
+    max-width: 780px;
+    width: 100%;
+}
+
+.container-onload h3 {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--accent);
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--border-subtle);
+}
+
+.container-onload p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.container-onload p strong {
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+.toggleButton {
+    display: block;
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0.875rem 1.5rem;
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--bg-primary);
+    background-color: var(--accent);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.toggleButton:hover {
+    background-color: var(--accent-hover);
+}
+
+.toggleButton:active {
+    transform: scale(0.98);
+}
+
+.paystub {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+}
+
+.paystub-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1.25rem;
+    background-color: var(--bg-secondary);
+    border-bottom: 2px solid var(--accent);
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.03em;
+}
+
+.paystub-body {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+}
+
+.paystub-earnings {
+    padding: 1rem 1.25rem;
+    border-right: 1px solid var(--border-subtle);
+}
+
+.paystub-deductions {
+    padding: 1rem 1.25rem;
+}
+
+.paystub-earnings h4,
+.paystub-deductions h4 {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.paystub-deductions h4 + table {
+    margin-bottom: 1rem;
+}
+
+.paystub table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.82rem;
+}
+
+.paystub th {
+    text-align: right;
+    padding: 0.25rem 0.5rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.paystub th:first-child {
+    text-align: left;
+}
+
+.paystub td {
+    text-align: right;
+    padding: 0.3rem 0.5rem;
+    color: var(--text-secondary);
+}
+
+.paystub td:first-child {
+    text-align: left;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.paystub tfoot td {
+    border-top: 1px solid var(--border-subtle);
+    padding-top: 0.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.net-pay-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--accent);
+    font-weight: 800;
+    font-size: 0.95rem;
+}
+
+.net-pay-row span:last-child {
+    color: var(--accent);
+    font-size: 1.05rem;
+}
+
+.cutting-line {
+    position: relative;
+    margin: 1.5rem 0;
+    border-top: 2px dashed var(--text-secondary);
+}
+
+.scissors {
+    position: absolute;
+    top: -0.65rem;
+    left: 1rem;
+    background-color: var(--bg-primary);
+    padding: 0 0.4rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.check {
+    background-color: #dce8d4;
+    color: #1a1a1a;
+    border: 2px solid #8aac7e;
+    border-radius: 4px;
+    padding: 1.75rem 2rem;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+}
+
+.check-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.check-company p,
+.check-info p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    color: #3a3a3a;
+}
+
+.check-company-name {
+    font-weight: 800;
+    font-size: 1rem !important;
+    color: #1a1a1a !important;
+    letter-spacing: 0.02em;
+}
+
+.check-info {
+    text-align: right;
+}
+
+.check-pay-line {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.check-pay-label {
+    font-weight: 800;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    color: #1a1a1a;
+}
+
+.check-written {
+    flex: 1;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #6a6a6a;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #2a2a2a;
+}
+
+.check-amount {
+    font-weight: 800;
+    font-size: 1rem;
+    border: 2px solid #5a7a50;
+    padding: 0.3rem 0.75rem;
+    white-space: nowrap;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #1a1a1a;
+}
+
+.check-recipient {
+    padding-left: 0.5rem;
+}
+
+.check-recipient p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    color: #3a3a3a;
+}
+
+.check-recipient p:first-child {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: #5a5a5a;
+    margin-bottom: 0.15rem;
+}
+
+.check-recipient-name {
+    font-weight: 700;
+    font-size: 0.95rem !important;
+    color: #1a1a1a !important;
+}
+
+.footer {
+    background-color: var(--bg-secondary);
+    border-top: 1px solid var(--border-subtle);
+    padding: 1.25rem 1.5rem;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--text-secondary);
+    letter-spacing: 0.03em;
+}
+
+@media (max-width: 700px) {
+    .header-text {
+        font-size: 1.4rem;
+    }
+
+    .container-onload {
+        padding: 1.75rem 1.5rem;
+    }
+
+    .paystub-body {
+        grid-template-columns: 1fr;
+    }
+
+    .paystub-earnings {
+        border-right: none;
+        border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .check {
+        padding: 1.25rem 1rem;
+    }
+
+    .check-written {
+        font-size: 0.7rem;
+    }
+}

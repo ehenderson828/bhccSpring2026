@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon import -->
+    <link rel="icon" type="image/png" href="assets/favicon/moneyBag.png">
+    <!-- CSS import -->
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Calculating Paycheck Assignment</title>
+</head>
+<body>
+    <header class="header">
+        <section class="header-container">
+            <h1 class="header-text">
+                Calculating Eric's Paycheck
+            </h1>
+        </section>
+    </header>
+    <main class="main-container">
+        <!-- Stating values start -->
+        <section class="container-onload">
+            <section>
+                <h3>Eric's Work Week:</h3>
+                <p>Regular hours worked: <strong>40</strong></p>
+                <p>Overtime hours worked: <strong>12</strong></p>
+                <p>Eric's hourly rate of pay: <strong>$20.00/hour</strong></p>
+                <p>Overtime multiplier: <strong>time and a half, or 1.5</strong></p>
+                <br>
+                <button class="toggleButton">Click Here to See Pay Details</button>
+            </section>
+        </section>
+        <!-- Starting values end -->
+        <!-- Pay details and pay stub start -->
+        <section class="container-postclick hidden">
+            <div class="paystub">
+                <div class="paystub-header">
+                    <span>123 - Eric Henderson</span>
+                    <span>Pay Period 1/4/26 to 1/10/26</span>
+                </div>
+                <div class="paystub-body">
+                    <div class="paystub-earnings">
+                        <h4>Earnings</h4>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Hours</th>
+                                    <th>Rate</th>
+                                    <th>This Period</th>
+                                    <th>YTD</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Regular</td>
+                                    <td>40</td>
+                                    <td>20.00</td>
+                                    <td id="regPay"></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Overtime</td>
+                                    <td>12</td>
+                                    <td>30.00</td>
+                                    <td id="otPay"></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td><strong>Gross Pay</strong></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td id="grossPay"></td>
+                                    <td></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <div class="paystub-deductions">
+                        <h4>Required Deductions</h4>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Rate</th>
+                                    <th>This Period</th>
+                                    <th>YTD</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Federal Income Tax</td>
+                                    <td>12.5%</td>
+                                    <td id="taxAmount"></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h4>Other Deductions</h4>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Rate</th>
+                                    <th>This Period</th>
+                                    <th>YTD</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Insurance</td>
+                                    <td>10%</td>
+                                    <td id="insuranceAmount"></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="net-pay-row">
+                            <span>NET PAY</span>
+                            <span id="netPay"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Cutting Line -->
+            <div class="cutting-line">
+                <span class="scissors">✂</span>
+            </div>
+            <!-- Mock Check -->
+            <div class="check">
+                <div class="check-header">
+                    <div class="check-company">
+                        <p class="check-company-name">MyWork Corporation</p>
+                        <p>123 Business Ave</p>
+                        <p>Boston, MA 02101</p>
+                    </div>
+                    <div class="check-info">
+                        <p>Check Number: <strong>001001</strong></p>
+                        <p>Pay Date: <strong>1/10/2026</strong></p>
+                    </div>
+                </div>
+                <div class="check-pay-line">
+                    <span class="check-pay-label">PAY</span>
+                    <span class="check-written" id="checkWritten"></span>
+                    <span class="check-amount" id="checkAmount"></span>
+                </div>
+                <div class="check-recipient">
+                    <p>To the Order of</p>
+                    <p class="check-recipient-name">Eric Henderson</p>
+                    <p>123 Main Street</p>
+                    <p>Somerville, MA 02143</p>
+                </div>
+            </div>
+            <button class="toggleButton">Return to Previous Page</button>
+        </section>
+        <!-- Pay details and pay stub end -->
+    </main>
+    <footer class="footer">
+        <section class="footer-container">
+            <h5 class="footer-text">
+                Page authored by Eric Henderson &copy; 2026
+            </h5>
+        </section>
+    </footer>
+    <!-- External JavaScript Import -->
+    <script src="scripts/index.js"></script>
+</body>
+</html>
