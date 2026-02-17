@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Favicon import -->
+        <link rel="icon" type="image/png" href="../assets/favicon/favicon.png">
+        <!-- Font Awesome import -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- External CSS import -->
+        <link rel="stylesheet" href="../styles/connect.css">
+        <title>Dollars to Euros Conversion</title>
+    </head>
+    <body>
+        <header class="header">
+            <section class="headerSubcontainer">
+                <h1 class="heading">Dollars to Euros</h1>
+            </section>
+        </header>
+        <nav class="navbar">
+            <a href="../index.html">Home</a>
+            <a href="construction.html">Contact</a>
+            <section class="dropdown">
+                <button class="dropbtn">Conversion Options <i class="fa fa-caret-right"></i></button>
+                <section class="dropdown-content">
+                    <a href="euros.html">Dollars to Euros</a>
+                    <a href="miles.html">Miles to Kilometers</a>
+                </section>
+            </section>
+        </nav>
+        <main class="mainContainer">
+            <section class="mainSubcontainer">
+                <h3 class="subHeading">Dollars to Euros Conversion</h3>
+                <form action="">
+                    <label for="dollars">Dollar amount:</label>
+                    <input 
+                        type="number"
+                        min="1"
+                        max="50"
+                        step="1"
+                        value="1"
+                        required
+                        id="dollars"
+                    >
+                    <button
+                        class="conversionBtn"
+                        type="button"
+                        onclick="convertEuros()"
+                    >
+                        Click Here to See Converted Value
+                    </button>
+                </form>
+                <section class="outputContainer">
+                    <h3 class="subHeading">Converted Euro Amount:</h3>
+                    <p class="euro_output">
+                        <!-- Converted amount will render here -->
+                    </p>
+                </section>
+            </section>
+        </main>
+        <footer class="footer">
+            <section class="footerSubcontainer">
+                <h5 class="footing">Website Created by Eric Henderson &copy; 2026</h5>
+            </section>
+        </footer>
+        <!-- External JS import -->
+        <script src="../scripts/connect.js" defer></script>
+    </body>
+</html>

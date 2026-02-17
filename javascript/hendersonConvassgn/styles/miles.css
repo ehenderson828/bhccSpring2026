@@ -1,0 +1,3 @@
+.kilometer_output::after {
+    content: ' km';
+}
