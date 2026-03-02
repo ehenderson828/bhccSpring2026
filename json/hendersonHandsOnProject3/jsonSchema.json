@@ -1,0 +1,84 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "jsonSchema.json",
+    "title": "Eric's Favorite Movies",
+    "description": "A schema for validating a collection of Eric's favorite movies",
+    "type": "object",
+    "required": ["ericsFavoriteMovies"],
+    "properties": {
+        "ericsFavoriteMovies": {
+            "type": "array",
+            "description": "An array of movie objects representing Eric's favorite films",
+            "minItems": 1,
+            "items": {
+                "type": "object",
+                "description": "A single movie entry",
+                "required": [
+                    "title",
+                    "actors",
+                    "genre",
+                    "director",
+                    "year",
+                    "runtime",
+                    "awards",
+                    "country",
+                    "poster"
+                ],
+                "properties": {
+                    "title": {
+                        "type": "string",
+                        "description": "The title of the movie",
+                        "minLength": 5,
+                        "maxLength": 60
+                    },
+                    "actors": {
+                        "type": "array",
+                        "description": "A list of actor names featured in the movie",
+                        "minItems": 1,
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "genre": {
+                        "type": "array",
+                        "description": "A list of genres that describe the movie",
+                        "minItems": 1,
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "director": {
+                        "type": "string",
+                        "description": "The name of the movie's director",
+                        "minLength": 1
+                    },
+                    "year": {
+                        "type": "integer",
+                        "description": "The year the movie was released",
+                        "minimum": 1888,
+                        "maximum": 2100
+                    },
+                    "runtime": {
+                        "type": "string",
+                        "description": "The runtime of the movie (e.g. '1h 53m')",
+                        "pattern": "^\\d+h( \\d+m)?$"
+                    },
+                    "awards": {
+                        "type": "boolean",
+                        "description": "Whether the movie has won any awards"
+                    },
+                    "country": {
+                        "type": "string",
+                        "description": "The primary country of production"
+                    },
+                    "poster": {
+                        "type": ["string", "null"],
+                        "description": "A URL to the movie poster image, or null if not available"
+                    }
+                },
+                "additionalProperties": false
+            }
+        }
+    },
+    "additionalProperties": false
+}

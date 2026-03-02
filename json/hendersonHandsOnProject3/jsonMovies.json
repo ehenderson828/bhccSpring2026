@@ -1,0 +1,88 @@
+{
+    "ericsFavoriteMovies": [
+        {
+            "title": "Twister",
+            "actors": [
+                "Helen Hunt",
+                "Bill Paxton",
+                "Jaime Gertz",
+                "Phillip Seymour Hoffman"
+            ],
+            "genre": [
+                "Disaster",
+                "Survival",
+                "Action",
+                "Adventure",
+                "Thriller"
+            ],
+            "director": "Jan de Bont",
+            "year": 1996,
+            "runtime": "1h 53m",
+            "awards": true,
+            "country": "United States",
+            "poster": null
+        },
+        {
+            "title": "Mean Girls",
+            "actors": [
+                "Lindsay Lohan",
+                "Lacey Chabert",
+                "Rachel McAdams",
+                "Amanda Seyfried"
+            ],
+            "genre": [
+                "Satire",
+                "Teen Comedy",
+                "Comedy"
+            ],
+            "director": "Mark Waters",
+            "year": 2004,
+            "runtime": "1h 37m",
+            "awards": true,
+            "country": "Canada",
+            "poster": null
+        },
+        {
+            "title": "Schindler's List",
+            "actors": [
+                "Liam Neeson",
+                "Ralph Fiennes",
+                "Ben Kingsley",
+                "Caroline Goodall"
+            ],
+            "genre": [
+                "Docudrama",
+                "Epic",
+                "Period Drama",
+                "Tragedy"
+            ],
+            "director": "Steven Spielberg",
+            "year": 1992,
+            "runtime": "3h 15m",
+            "awards": true,
+            "country": "Poland",
+            "poster": null
+        },
+        {
+            "title": "Dune: Part Two",
+            "actors": [
+                "Timothée Chalamet",
+                "Zendaya",
+                "Rebecca Ferguson",
+                "Javier Bardem"
+            ],
+            "genre": [
+                "Epic",
+                "Action",
+                "Adventure",
+                "Sci-Fi Epic"
+            ],
+            "director": "Denis Villeneuve",
+            "year": 2024,
+            "runtime": "2h 46m",
+            "awards": true,
+            "country": "United Arab Emirates",
+            "poster": null
+        }
+    ]
+}
