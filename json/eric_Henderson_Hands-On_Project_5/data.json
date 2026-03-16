@@ -1,0 +1,34 @@
+{
+  "students": [
+    {
+      "name": "Mike",
+      "age": 36,
+      "major": "Web Design"
+    },
+    {
+      "name": "Lucia",
+      "age": 29,
+      "major": "Information Technology"
+    },
+    {
+      "name": "Ahmed",
+      "age": 27,
+      "major": "Information Systems"
+    },
+    {
+      "name": "Alexander",
+      "age": 32,
+      "major": "Political Science"
+    },
+    {
+      "name": "Mansa",
+      "age": 57,
+      "major": "Theology"
+    },
+    {
+      "name": "Mohandas",
+      "age": 78,
+      "major": "Law"
+    }
+  ]
+}
