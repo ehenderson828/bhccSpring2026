@@ -1,0 +1,144 @@
+/* Header */
+header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: var(--color-text-light);
+    text-transform: uppercase;
+}
+
+/* Section title */
+section h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+    border: 1px solid var(--color-border);
+}
+
+thead th {
+    padding: 0.75rem 1rem;
+    color: var(--color-text-light);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-align: left;
+}
+
+tbody td {
+    padding: 0.55rem 1rem;
+    border: 1px solid var(--color-border);
+}
+
+/* Dollar column */
+tbody td:first-child {
+    color: var(--color-green);
+    font-weight: 600;
+}
+
+/* Dollars ➡️ Euros Theme */
+.theme-red h2          { color: #7a1a1a; }
+.theme-red thead tr    { background-color: #9b2335; }
+.theme-red thead th    { border: 1px solid #7a1a1a; }
+.theme-red tbody tr:nth-child(even) { background-color: #fdf0f0; }
+.theme-red tbody tr:hover           { background-color: #f7dada; }
+
+/* Dollars ➡️ Francs Theme */
+.theme-navy h2            { color: #0f2e47; }
+.theme-navy thead tr      { background-color: #1a4a6e; }
+.theme-navy thead th      { border: 1px solid #0f2e47; }
+.theme-navy tbody tr:nth-child(even)   { background-color: #edf3f8; }
+.theme-navy tbody tr:hover             { background-color: #d5e8f3; }
+
+/* Dollars ➡️ Pesos Theme */
+.theme-green h2           { color: #0f2e1c; }
+.theme-green thead tr     { background-color: #1a4a2e; }
+.theme-green thead th     { border: 1px solid #0f2e1c; }
+.theme-green tbody tr:nth-child(even)  { background-color: #edf5f0; }
+.theme-green tbody tr:hover            { background-color: #d5eedd; }
+
+/* Try a Different Increment button */
+#try-increment-btn {
+    display: block;
+    margin: 1rem auto 0;
+    padding: 0.7rem 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-white);
+    background-color: var(--color-purple);
+    border: 2px solid var(--color-purple);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+}
+
+#try-increment-btn:hover {
+    background-color: var(--color-purple-dark);
+    border-color: var(--color-purple-dark);
+    transform: translateY(-2px);
+}
+
+#try-increment-btn:active {
+    transform: translateY(0);
+}
+
+/* Footer */
+footer p {
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    opacity: 0.85;
+    letter-spacing: 0.03em;
+}
+
+/* Tablet: 768px */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.7rem;
+    }
+    section h2 {
+        font-size: 1.35rem;
+    }
+}
+
+/*  Mobile: 480px */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.4rem;
+    }
+    section h2 {
+        font-size: 1.15rem;
+    }
+    table {
+        font-size: 0.85rem;
+    }
+    thead th,
+    tbody td {
+        padding: 0.45rem 0.65rem;
+    }
+}
+
+/*  Small mobile: 360px */
+@media (max-width: 360px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+    section h2 {
+        font-size: 1rem;
+    }
+    table {
+        font-size: 0.8rem;
+    }
+    thead th,
+    tbody td {
+        padding: 0.35rem 0.5rem;
+    }
+}

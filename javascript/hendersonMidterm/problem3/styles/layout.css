@@ -1,0 +1,81 @@
+/* Layout: page structure and positioning */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    padding: 2rem 1.5rem;
+    text-align: center;
+    border-bottom: 1px solid var(--color-border);
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1.5rem;
+}
+
+.output-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3.5rem 5rem;
+    border-radius: 24px;
+    max-width: 90vw;
+}
+
+#try-again-btn {
+    margin-top: 2rem;
+}
+
+footer {
+    padding: 1.5rem;
+    text-align: center;
+    border-top: 1px solid var(--color-border);
+}
+
+/* Tablet: 768px */
+@media (max-width: 768px) {
+    main {
+        padding: 3rem 1rem;
+    }
+    .output-card {
+        padding: 2.5rem 3rem;
+        width: 100%;
+    }
+}
+
+/* Mobile: 480px */
+@media (max-width: 480px) {
+    header {
+        padding: 1.5rem 1rem;
+    }
+    main {
+        padding: 2rem 1rem;
+    }
+    .output-card {
+        padding: 2rem 1.5rem;
+        border-radius: 16px;
+        width: 100%;
+    }
+    #try-again-btn {
+        margin-top: 1.25rem;
+        width: 100%; /* Button spans full card width on mobile */
+    }
+}
+
+/* Small mobile: 360px */
+@media (max-width: 360px) {
+    .output-card {
+        padding: 1.5rem 1rem;
+    }
+    #try-again-btn {
+        margin-top: 1rem;
+    }
+}

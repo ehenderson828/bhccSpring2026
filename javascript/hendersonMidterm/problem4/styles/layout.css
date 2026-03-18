@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    background-color: var(--color-header);
+    padding: 1.1rem 1.5rem;
+    box-shadow: 0 2px 4px var(--color-shadow);
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1.5rem;
+    gap: 1.25rem;
+}
+
+.result-card {
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--color-white);
+    border-radius: 8px;
+    padding: 1.75rem 2rem;
+    box-shadow:
+        0 1px 3px var(--color-shadow),
+        0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 1.25rem 1rem;
+    border-top: 1px solid var(--color-border);
+    margin-top: auto;
+}
+
+/* Tablet: 768px */
+@media (max-width: 768px) {
+    main {
+        padding: 2rem 1rem;
+    }
+}
+
+/* Mobile: 480px */
+@media (max-width: 480px) {
+    header {
+        padding: 1rem 1rem;
+    }
+    main {
+        padding: 1.5rem 1rem;
+        justify-content: flex-start;
+    }
+    .result-card {
+        padding: 1.25rem 1.25rem;
+    }
+    #try-journey-btn {
+        width: 100%;
+    }
+}
+
+/* Small mobile: 360px */
+@media (max-width: 360px) {
+    main {
+        padding: 1rem 0.75rem;
+    }
+}

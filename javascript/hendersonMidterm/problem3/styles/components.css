@@ -1,0 +1,111 @@
+/* Components: UI element styles */
+
+/* Header */
+header h1 {
+    font-size: 1.1rem;
+    font-weight: 300;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--color-text);
+    opacity: 0.6;
+}
+
+/* Output card — glass morphism container */
+.output-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.4),
+        0 0 80px var(--glow-color),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+}
+
+/* Name output — gradient text, fluid font size */
+#output {
+    font-size: clamp(2.5rem, 8vw, 7rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    text-align: center;
+    word-break: break-word;
+
+    /* Gradient text */
+    background: var(--gradient-name);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    /* Glow */
+    filter: drop-shadow(0 0 24px var(--glow-color));
+
+    /* Fade-in on load */
+    animation: fadeUp 0.7s ease forwards;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Try Another Name button */
+#try-again-btn {
+    padding: 0.7rem 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-text);
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+}
+
+#try-again-btn:hover {
+    background: rgba(255, 255, 255, 0.14);
+    border-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-2px);
+}
+
+#try-again-btn:active {
+    transform: translateY(0);
+}
+
+/* Footer */
+footer p {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    letter-spacing: 0.03em;
+}
+
+/* Tablet: 768px */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 0.95rem;
+        letter-spacing: 0.2em;
+    }
+}
+
+/* Mobile: 480px */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 0.85rem;
+        letter-spacing: 0.15em;
+    }
+}
+
+/* Small mobile: 360px */
+@media (max-width: 360px) {
+    header h1 {
+        font-size: 0.75rem;
+        letter-spacing: 0.1em;
+    }
+}

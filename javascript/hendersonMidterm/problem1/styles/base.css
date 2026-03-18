@@ -1,0 +1,25 @@
+/* Style reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-bg-start:   #fef3c7; /* soft golden yellow */
+    --color-bg-mid:     #fed7aa; /* warm peach         */
+    --color-bg-end:     #fecaca; /* light rose         */
+    --color-amber:      #f59e0b;
+    --color-amber-dark: #d97706;
+    --color-text:       #78350f; /* deep warm brown    */
+    --color-text-light: #fffbeb;
+    --color-shadow:     rgba(120, 53, 15, 0.2);
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: linear-gradient(135deg, var(--color-bg-start), var(--color-bg-mid), var(--color-bg-end));
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: var(--color-text);
+}

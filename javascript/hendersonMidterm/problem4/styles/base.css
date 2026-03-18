@@ -1,0 +1,25 @@
+/* Style reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-bg:             #f8f9fa; /* light gray */
+    --color-header:         #202124; /* dark gray */
+    --color-white:          #ffffff;
+    --color-blue:           #1a73e8; /* blue */
+    --color-blue-dark:      #1557b0; /* blue hover */
+    --color-text:           #202124; /* primary text */
+    --color-text-secondary: #5f6368; /* secondary text */
+    --color-border:         #e8eaed;
+    --color-shadow:         rgba(0, 0, 0, 0.12);
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Imported on dom.js */
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    min-height: 100vh;
+}

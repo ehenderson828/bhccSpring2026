@@ -1,0 +1,25 @@
+/* Style reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Color variables */
+:root {
+    --color-purple:      #4a2c6e; /* primary purple — headers, th  */
+    --color-purple-dark: #2e1a47; /* deep purple — page header bg  */
+    --color-green:       #2e8540; /* money green — dollar column   */
+    --color-white:       #ffffff;
+    --color-row-alt:     #f0edf5; /* light purple tint — even rows */
+    --color-border:      #d6d7d9;
+    --color-text:        #1b1b1b;
+    --color-text-light:  #ffffff;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: var(--color-white);
+    color: var(--color-text);
+    min-height: 100vh;
+}
