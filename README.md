@@ -1,6 +1,6 @@
 # BHCC Spring 2026 — Assignment Repository
 
-This repository contains coursework and assignments for the Spring 2026 semester at Bunker Hill Community College.
+This repository contains coursework and assignments for the Spring 2026 semester at Bunker Hill Community College
 
 ## Courses
 
