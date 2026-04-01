@@ -1,0 +1,25 @@
+.site-header {
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Page-specific background images */
+.site-header.boston {
+  background-image: url("../assets/images/boston.jpg");
+}
+
+.site-header.northend {
+  background-image: url("../assets/images/northend.jpg");
+}
+
+.header-name {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+}
