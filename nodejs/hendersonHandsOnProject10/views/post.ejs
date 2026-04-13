@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <%- include('layouts/header'); -%>
+
+  <body>
+  
+    <%- include('layouts/navbar'); -%>
+  
+  
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('/img/post-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Single Blog Post</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <h1><%= blogpost.title %></h1>
+          <p><%= blogpost.body %></p>
+          <!-- Image will only render if it exists in the collection -->
+          <% if (blogpost.image) { %>
+            <% const altText = blogpost.image.replace(/\.[^.]+$/, ''); %>
+            <img
+              src="/img/<%= blogpost.image %>"
+              alt="<%= altText %>"
+              class="img-fluid"
+              style="max-width: 300px; max-height: 300px;"
+            >
+          <% } %>
+          <div class="mt-3">
+            <a class="btn btn-primary" href="/">&larr; Back</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <%- include('layouts/footer'); -%>
+
+  <%- include('layouts/scripts'); -%>
+
+</body>
+
+</html>
