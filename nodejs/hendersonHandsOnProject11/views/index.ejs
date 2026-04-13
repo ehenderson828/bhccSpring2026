@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('layouts/header'); -%>
+
+<body>
+
+  <%- include('layouts/navbar'); -%>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/home-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Eric's Blog Site</h1>
+            <span class="subheading">Posted Blogs Below:</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+
+        <% if (success.length > 0) { %>
+          <div class="alert alert-success"><%= success %></div>
+        <% } %>
+        <% if (error.length > 0) { %>
+          <div class="alert alert-danger"><%= error %></div>
+        <% } %>
+
+        <% posts.forEach(post => { %>
+          <div class="post-preview">
+            <h2 class="post-title"><a href="/post/<%= post._id %>"><%= post.title %></a></h2>
+          </div>
+          <hr>
+        <% }); %>
+
+        <!-- New Post Button — only visible to logged in users -->
+        <div class="clearfix">
+          <% if (isLoggedIn) { %>
+            <a class="btn btn-primary float-right" href="/posts/new">New Post &rarr;</a>
+          <% } %>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <%- include('layouts/footer'); -%>
+
+  <%- include('layouts/scripts'); -%>
+
+</body>
+
+</html>

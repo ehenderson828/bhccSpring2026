@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('layouts/header'); -%>
+
+<body>
+
+  <%- include('layouts/navbar'); -%>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('/img/error-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>404</h1>
+            <span class="subheading">Page Not Found</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto text-center" style="padding: 60px 0;">
+        <h2>Oops! That page doesn't exist.</h2>
+        <p class="lead">The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.</p>
+        <a class="btn btn-primary" href="/">&larr; Back to Home</a>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <%- include('layouts/footer'); -%>
+
+  <%- include('layouts/scripts'); -%>
+
+</body>
+
+</html>
